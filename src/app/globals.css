@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Patriotic India Color Palette */
+  --color-saffron: #ff9933;
+  --color-saffron-dark: #e07a00;
+  --color-saffron-light: #ffb366;
+  --color-saffron-50: #fff8ee;
+  --color-saffron-100: #ffe4b3;
+
+  --color-india-green: #138808;
+  --color-india-green-dark: #0d6b06;
+  --color-india-green-light: #1aac0a;
+  --color-india-green-50: #f0faf0;
+
+  --color-india-navy: #1a237e;
+  --color-india-navy-light: #283593;
+
+  --color-cream: #fffbf5;
+  --color-warm-gray: #faf7f2;
+
+  --font-sans: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff9933;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e07a00;
+}
+
+.tricolor-bar {
+  background: linear-gradient(to right, #ff9933 33.33%, #ffffff 33.33%, #ffffff 66.66%, #138808 66.66%);
 }
