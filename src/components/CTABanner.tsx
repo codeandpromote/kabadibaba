@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/919424612100?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20free%20scrap%20pickup.";
+  "https://wa.me/919575824800?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20free%20scrap%20pickup.";
 
 interface CTABannerProps {
   title?: string;
@@ -11,7 +11,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   title = "Ready to Turn Your Scrap Into Cash?",
-  subtitle = "Free pickup across 40+ cities in MP & UP. Instant cash payment. No minimum quantity.",
+  subtitle = "Free pickup across Prayagraj, Uttar Pradesh. Instant cash payment. No minimum quantity.",
 }: CTABannerProps) {
   return (
     <section className="relative overflow-hidden bg-gray-950 py-16 sm:py-20">
@@ -54,7 +54,7 @@ export default function CTABanner({
         </div>
 
         <p className="mt-6 text-sm text-gray-600">
-          Mon – Sat &nbsp;·&nbsp; 9:00 AM – 6:00 PM &nbsp;·&nbsp; +91 94246 12100
+          Mon – Sat &nbsp;·&nbsp; 9:00 AM – 6:00 PM &nbsp;·&nbsp; +91 95758 24800
         </p>
       </div>
     </section>

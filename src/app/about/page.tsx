@@ -8,7 +8,7 @@ import { Leaf, Target, Users } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about KabadiBaba — our story, our mission to make scrap selling dignified and transparent across Madhya Pradesh and Uttar Pradesh.",
+    "Learn about KabadiBaba — our story, our mission to make scrap selling dignified and transparent across Prayagraj, Uttar Pradesh.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         badge="Our Story"
         title="Making Scrap Selling"
         titleHighlight="Dignified"
-        subtitle="We started in Bhopal with a simple belief — that every household deserves a fair, honest, and respectful scrap pickup experience."
+        subtitle="We started in Prayagraj with a simple belief — that every household deserves a fair, honest, and respectful scrap pickup experience."
         breadcrumbs={[{ label: "About Us" }]}
         variant="green"
       />
@@ -39,14 +39,14 @@ function OurStory() {
           {/* Story text */}
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900 mb-5">
-              Born in Bhopal, Growing Across Central India
+              Born in Prayagraj, Growing Across India
             </h2>
             <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <p>
-                KabadiBaba started in 2020, right in the heart of Bhopal, Madhya Pradesh. Our
-                founders noticed a simple problem: households had scrap piling up but no reliable,
-                trustworthy way to sell it. Local kabadis often gave poor rates, used uncertified
-                scales, and left customers feeling cheated.
+                KabadiBaba started right here in Prayagraj, Uttar Pradesh. Our founders noticed
+                a simple problem: households had scrap piling up but no reliable, trustworthy way
+                to sell it. Local kabadis often gave poor rates, used uncertified scales, and left
+                customers feeling cheated.
               </p>
               <p>
                 We set out to change that. By partnering directly with large-scale recycling
@@ -55,9 +55,9 @@ function OurStory() {
                 government-certified digital scales and trained them to be courteous and transparent.
               </p>
               <p>
-                What started as a small operation in Bhopal now covers 40+ cities across
-                Madhya Pradesh and Uttar Pradesh — and we&apos;re just getting started. Every
-                household we serve is one more step toward a cleaner, greener India.
+                We are proud to serve Prayagraj and its surrounding localities — and we&apos;re
+                just getting started. Every household we serve is one more step toward a
+                cleaner, greener India.
               </p>
             </div>
           </div>
@@ -66,9 +66,9 @@ function OurStory() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { value: "2020", label: "Year Founded", color: "text-saffron" },
-              { value: "40+", label: "Cities Covered", color: "text-india-green" },
-              { value: "10,000+", label: "Happy Customers", color: "text-saffron" },
-              { value: "500+ T", label: "Scrap Recycled", color: "text-india-green" },
+              { value: "Prayagraj", label: "Currently Serving", color: "text-india-green" },
+              { value: "5,000+", label: "Happy Customers", color: "text-saffron" },
+              { value: "200+ T", label: "Scrap Recycled", color: "text-india-green" },
             ].map((stat) => (
               <div
                 key={stat.label}

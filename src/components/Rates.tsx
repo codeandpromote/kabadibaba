@@ -75,7 +75,7 @@ export default function Rates() {
             Today&apos;s Scrap Rates
           </h2>
           <p className="mt-3 text-gray-500 text-lg max-w-xl mx-auto">
-            We offer the best market rates in MP & UP — no hidden deductions, transparent digital weighing.
+            We offer the best market rates in Prayagraj — no hidden deductions, transparent digital weighing.
           </p>
         </motion.div>
 
@@ -115,7 +115,7 @@ export default function Rates() {
           <Info size={18} className="text-saffron flex-shrink-0 mt-0.5" />
           <p className="text-sm text-gray-600">
             <strong>Note:</strong> Rates shown are approximate market prices for{" "}
-            <strong>Madhya Pradesh & Uttar Pradesh</strong> as of April 2025. Actual rates may vary
+            <strong>Prayagraj, Uttar Pradesh</strong> as of April 2025. Actual rates may vary
             based on material quality, quantity, and current market conditions. Call us for the
             latest rates before scheduling your pickup.
           </p>

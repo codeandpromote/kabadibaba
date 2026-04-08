@@ -7,7 +7,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "See how KabadiBaba works in 3 easy steps — book a pickup, we come to you, and you get paid instantly. No app, no hassle, free doorstep service across MP & UP.",
+    "See how KabadiBaba works in 3 easy steps — book a pickup, we come to you, and you get paid instantly. No app, no hassle, free doorstep service in Prayagraj.",
 };
 
 export default function HowItWorksPage() {

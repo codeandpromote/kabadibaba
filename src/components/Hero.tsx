@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, MessageCircle, ShieldCheck, Star, Zap } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/919424612100?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20scrap%20pickup.";
+  "https://wa.me/919575824800?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20scrap%20pickup.";
 
 export default function Hero() {
   return (
@@ -45,7 +45,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-saffron-50 border border-saffron-100 text-saffron-dark rounded-full px-4 py-1.5 text-sm font-semibold mb-6"
           >
             <Star size={14} className="fill-saffron text-saffron" />
-            Trusted by 10,000+ households across MP & UP
+            Trusted by 5,000+ households in Prayagraj
           </motion.div>
 
           {/* Headline */}
@@ -68,8 +68,7 @@ export default function Hero() {
             className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl"
           >
             Free doorstep pickup anywhere in{" "}
-            <span className="font-semibold text-india-green">Madhya Pradesh</span> &{" "}
-            <span className="font-semibold text-saffron">Uttar Pradesh</span>. We
+            <span className="font-semibold text-india-green">Prayagraj, Uttar Pradesh</span>. We
             weigh your scrap transparently and pay <span className="font-semibold">cash instantly</span>.
           </motion.p>
 

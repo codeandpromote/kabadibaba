@@ -5,7 +5,7 @@ import { ShieldCheck, Zap, Scale, Banknote } from "lucide-react";
 export const metadata: Metadata = {
   title: "Book Free Pickup",
   description:
-    "Schedule your free scrap pickup in Madhya Pradesh or Uttar Pradesh. Fill the form or WhatsApp us at +91 94246 12100. Same-day and next-day slots available.",
+    "Schedule your free scrap pickup in Prayagraj. Fill the form or WhatsApp us at +91 95758 24800. Same-day and next-day slots available.",
 };
 
 export default function BookPickupPage() {

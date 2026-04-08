@@ -7,7 +7,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Scrap Rates",
   description:
-    "Check today's scrap rates for paper, plastic, metal, e-waste, and old appliances in Madhya Pradesh and Uttar Pradesh. Best rates guaranteed by KabadiBaba.",
+    "Check today's scrap rates for paper, plastic, metal, e-waste, and old appliances in Prayagraj, Uttar Pradesh. Best rates guaranteed by KabadiBaba.",
 };
 
 export default function RatesPage() {

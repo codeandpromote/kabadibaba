@@ -111,7 +111,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      whatsappUrl: `https://wa.me/919424612100?text=${whatsappText}`,
+      whatsappUrl: `https://wa.me/919575824800?text=${whatsappText}`,
     });
   } catch (err) {
     console.error("Contact form error:", err);

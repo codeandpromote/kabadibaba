@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/919424612100?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20free%20scrap%20pickup.";
+  "https://wa.me/919575824800?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20free%20scrap%20pickup.";
 
 export default function WhatsAppFloat() {
   return (

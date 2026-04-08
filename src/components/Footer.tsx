@@ -8,8 +8,10 @@ const quickLinks = [
   { label: "Book Free Pickup", href: "#contact" },
 ];
 
-const mpCities = ["Bhopal", "Indore", "Jabalpur", "Gwalior", "Ujjain", "Sagar", "Rewa", "Dewas"];
-const upCities = ["Lucknow", "Kanpur", "Agra", "Varanasi", "Prayagraj", "Meerut", "Mathura", "Aligarh"];
+const prayagrajLocalities = [
+  "Civil Lines", "George Town", "Allahpur", "Naini",
+  "Phaphamau", "Jhunsi", "Bamrauli", "Kareli",
+];
 
 export default function Footer() {
   return (
@@ -37,24 +39,24 @@ export default function Footer() {
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
               Making sustainable waste management accessible to every household in
-              Madhya Pradesh & Uttar Pradesh since 2020.
+              Prayagraj, Uttar Pradesh since 2020.
             </p>
             <div className="space-y-2">
               <a
-                href="https://wa.me/919424612100"
+                href="https://wa.me/919575824800"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-india-green hover:text-india-green-light transition-colors text-sm"
               >
                 <MessageCircle size={16} />
-                +91 94246 12100
+                +91 95758 24800
               </a>
               <a
-                href="tel:+919424612100"
+                href="tel:+919575824800"
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
               >
                 <Phone size={16} />
-                +91 94246 12100
+                +91 95758 24800
               </a>
               <a
                 href="mailto:hello@kabadibaba.co.in"
@@ -85,37 +87,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Cities */}
+          {/* Areas */}
           <div>
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
-              Key Cities
+              Service Areas
             </h4>
-            <div className="mb-3">
-              <div className="flex items-center gap-1.5 text-saffron text-xs font-semibold mb-2">
-                <MapPin size={12} />
-                Madhya Pradesh
-              </div>
-              <ul className="space-y-1.5">
-                {mpCities.map((c) => (
-                  <li key={c} className="text-xs text-gray-400">
-                    {c}
-                  </li>
-                ))}
-              </ul>
+            <div className="flex items-center gap-1.5 text-india-green text-xs font-semibold mb-3">
+              <MapPin size={12} />
+              Prayagraj, U.P.
             </div>
-            <div className="mt-4">
-              <div className="flex items-center gap-1.5 text-india-green text-xs font-semibold mb-2">
-                <MapPin size={12} />
-                Uttar Pradesh
-              </div>
-              <ul className="space-y-1.5">
-                {upCities.map((c) => (
-                  <li key={c} className="text-xs text-gray-400">
-                    {c}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="space-y-1.5">
+              {prayagrajLocalities.map((c) => (
+                <li key={c} className="text-xs text-gray-400">
+                  {c}
+                </li>
+              ))}
+              <li className="text-xs text-gray-600 italic mt-1">+ more areas</li>
+            </ul>
           </div>
 
           {/* Working Hours */}
@@ -143,7 +131,7 @@ export default function Footer() {
             <div className="mt-6 bg-gray-900 rounded-xl p-4">
               <p className="text-xs text-gray-400 mb-3">Book a pickup right now:</p>
               <a
-                href="https://wa.me/919424612100?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20pickup."
+                href="https://wa.me/919575824800?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20pickup."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center bg-india-green hover:bg-india-green-dark text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"

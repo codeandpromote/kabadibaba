@@ -13,7 +13,7 @@ const schema = z.object({
     .min(10, "Enter a valid 10-digit mobile number")
     .max(13)
     .regex(/^[6-9]\d{9}$/, "Enter a valid Indian mobile number"),
-  city: z.string().min(2, "Please enter your city"),
+  city: z.string().min(2, "Please enter your city / locality"),
   scrapType: z.string().min(1, "Please select scrap type"),
   preferredDate: z.string().optional(),
   message: z.string().optional(),
@@ -31,8 +31,16 @@ const scrapTypes = [
   "Not sure – you tell me!",
 ];
 
+function buildWhatsAppUrl(data: FormData) {
+  const { name, phone, city, scrapType, preferredDate, message } = data;
+  const text = encodeURIComponent(
+    `Hi KabadiBaba! 👋\n\nI want to schedule a scrap pickup.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*City/Area:* ${city}\n*Scrap Type:* ${scrapType}${preferredDate ? `\n*Preferred Date:* ${preferredDate}` : ""}${message ? `\n*Note:* ${message}` : ""}\n\nPlease confirm my booking. Thank you!`
+  );
+  return `https://wa.me/919575824800?text=${text}`;
+}
+
 export default function BookingForm() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
   const [whatsappUrl, setWhatsappUrl] = useState<string | null>(null);
 
   const {
@@ -44,6 +52,8 @@ export default function BookingForm() {
 
   const onSubmit = async (data: FormData) => {
     setStatus("loading");
+    const waUrl = buildWhatsAppUrl(data);
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -51,13 +61,14 @@ export default function BookingForm() {
         body: JSON.stringify(data),
       });
       const json = await res.json();
-      if (!res.ok) throw new Error(json.error || "Failed");
-      setWhatsappUrl(json.whatsappUrl || null);
-      setStatus("success");
-      reset();
+      setWhatsappUrl(json.whatsappUrl || waUrl);
     } catch {
-      setStatus("error");
+      // Email failed — silently fall back to WhatsApp so no lead is lost
+      setWhatsappUrl(waUrl);
     }
+
+    setStatus("success");
+    reset();
   };
 
   const inputClass = (hasError: boolean) =>
@@ -90,26 +101,26 @@ export default function BookingForm() {
             {/* Contact options */}
             <div className="mt-8 space-y-4">
               <a
-                href="https://wa.me/919424612100?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20scrap%20pickup."
+                href="https://wa.me/919575824800?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20scrap%20pickup."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-india-green rounded-2xl text-white hover:bg-india-green-dark transition-colors group"
+                className="flex items-center gap-4 p-4 bg-india-green rounded-2xl text-white hover:bg-india-green-dark transition-colors"
               >
                 <MessageCircle size={28} className="flex-shrink-0" />
                 <div>
                   <div className="font-bold text-base">Chat on WhatsApp</div>
-                  <div className="text-white/75 text-sm">+91 94246 12100 – instant reply</div>
+                  <div className="text-white/75 text-sm">+91 95758 24800 – instant reply</div>
                 </div>
               </a>
 
               <a
-                href="tel:+919424612100"
+                href="tel:+919575824800"
                 className="flex items-center gap-4 p-4 bg-white border-2 border-saffron rounded-2xl text-saffron hover:bg-saffron-50 transition-colors"
               >
                 <Phone size={26} className="flex-shrink-0" />
                 <div>
                   <div className="font-bold text-base text-gray-900">Call Us</div>
-                  <div className="text-gray-500 text-sm">+91 94246 12100 | Mon–Sat, 9AM–6PM</div>
+                  <div className="text-gray-500 text-sm">+91 95758 24800 | Mon–Sat, 9AM–6PM</div>
                 </div>
               </a>
 
@@ -191,11 +202,11 @@ export default function BookingForm() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-1.5 block">
-                      City *
+                      Locality / Area *
                     </label>
                     <input
                       {...register("city")}
-                      placeholder="e.g. Bhopal"
+                      placeholder="e.g. Civil Lines, Naini"
                       className={inputClass(!!errors.city)}
                     />
                     {errors.city && (
@@ -240,18 +251,10 @@ export default function BookingForm() {
                   <textarea
                     {...register("message")}
                     rows={3}
-                    placeholder="Approximate quantity, address details, or anything else..."
+                    placeholder="Approximate quantity, address, or anything else..."
                     className={`${inputClass(false)} resize-none`}
                   />
                 </div>
-
-                {status === "error" && (
-                  <p className="text-sm text-red-500 bg-red-50 rounded-lg px-4 py-3">
-                    Something went wrong. Please{" "}
-                    <a href="https://wa.me/919424612100" className="underline">WhatsApp us</a> or{" "}
-                    <a href="tel:+919424612100" className="underline">call directly</a>.
-                  </p>
-                )}
 
                 <button
                   type="submit"

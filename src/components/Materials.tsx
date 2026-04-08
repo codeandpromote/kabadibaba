@@ -75,7 +75,7 @@ export default function Materials() {
           className="text-center mb-14"
         >
           <p className="text-saffron font-semibold text-sm uppercase tracking-widest mb-2">
-            40+ Recyclable Items
+            All Types of Scrap
           </p>
           <h2 className="text-4xl font-extrabold text-gray-900">
             What We Collect

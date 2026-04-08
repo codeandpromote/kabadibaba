@@ -30,8 +30,8 @@ const faqs = [
     a: "Yes! We take old TVs, refrigerators, ACs, washing machines, laptops, mobile phones, wires, and all types of electronic waste. Our rates for appliances are per piece.",
   },
   {
-    q: "What areas in Madhya Pradesh and Uttar Pradesh do you cover?",
-    a: "We currently cover 40+ cities including Bhopal, Indore, Jabalpur, Gwalior, Lucknow, Kanpur, Agra, Varanasi, Prayagraj, and many more. Check our full city list above or WhatsApp us to confirm your area.",
+    q: "Which areas in Prayagraj do you cover?",
+    a: "We cover all major localities in Prayagraj including Civil Lines, George Town, Allahpur, Naini, Phaphamau, Jhunsi, Bamrauli, Kareli, and many more. WhatsApp us to confirm your specific area.",
   },
   {
     q: "Are your agents verified and safe to let into my home?",
@@ -111,7 +111,7 @@ export default function FAQ() {
         >
           Still have questions?{" "}
           <a
-            href="https://wa.me/919424612100"
+            href="https://wa.me/919575824800"
             target="_blank"
             rel="noopener noreferrer"
             className="text-india-green font-semibold hover:underline"
@@ -119,8 +119,8 @@ export default function FAQ() {
             WhatsApp us
           </a>{" "}
           or{" "}
-          <a href="tel:+919424612100" className="text-saffron font-semibold hover:underline">
-            call +91 94246 12100
+          <a href="tel:+919575824800" className="text-saffron font-semibold hover:underline">
+            call +91 95758 24800
           </a>
         </motion.p>
       </div>

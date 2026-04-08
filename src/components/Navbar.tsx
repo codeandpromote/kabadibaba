@@ -81,13 +81,13 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+919424612100"
+              href="tel:+919575824800"
               className={`flex items-center gap-1.5 text-sm font-medium transition-colors hover:text-saffron ${
                 solidBg ? "text-gray-700" : "text-gray-800"
               }`}
             >
               <Phone size={15} />
-              +91 94246 12100
+              +91 95758 24800
             </a>
             <Link
               href="/book-pickup"
@@ -128,12 +128,12 @@ export default function Navbar() {
               );
             })}
             <a
-              href="tel:+919424612100"
+              href="tel:+919575824800"
               className="flex items-center gap-2 text-sm text-gray-600 hover:text-saffron py-1"
               onClick={() => setMenuOpen(false)}
             >
               <Phone size={15} />
-              +91 94246 12100
+              +91 95758 24800
             </a>
             <Link
               href="/book-pickup"

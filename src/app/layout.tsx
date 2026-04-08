@@ -13,13 +13,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "KabadiBaba – Sell Scrap Online | Free Pickup in MP & UP",
+    default: "KabadiBaba – Sell Scrap Online | Free Pickup in Prayagraj",
     template: "%s | KabadiBaba",
   },
   description:
-    "Turn your scrap into cash! Free doorstep pickup across Madhya Pradesh & Uttar Pradesh. Sell newspaper, plastic, metal, e-waste, old appliances. Best rates, instant cash payment.",
+    "Turn your scrap into cash! Free doorstep pickup across Prayagraj, Uttar Pradesh. Sell newspaper, plastic, metal, e-waste, old appliances. Best rates, instant cash payment.",
   keywords:
-    "kabadi, scrap dealer, sell scrap online, kabadiwala, scrap pickup Bhopal, scrap pickup Lucknow, kabadi MP, kabadi UP, old newspaper rates, iron scrap rates",
+    "kabadi, scrap dealer, sell scrap online, kabadiwala, scrap pickup Prayagraj, kabadiwala Prayagraj, old newspaper rates, iron scrap rates Prayagraj",
   authors: [{ name: "KabadiBaba" }],
   openGraph: {
     siteName: "KabadiBaba",
