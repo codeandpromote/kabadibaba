@@ -14,7 +14,7 @@ export default function RatesPage() {
   return (
     <>
       <PageHero
-        badge="Updated April 2025"
+        badge="Best Rates in Prayagraj"
         title="Today's Scrap"
         titleHighlight="Rates"
         subtitle="Transparent, market-linked rates for all types of scrap. What you see is what you get — no deductions, no surprises."
