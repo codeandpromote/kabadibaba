@@ -2,7 +2,13 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, MessageCircle, ShieldCheck, Star, Zap } from "lucide-react";
+import {
+  ArrowRight,
+  MessageCircle,
+  ShieldCheck,
+  Star,
+  Zap,
+} from "lucide-react";
 
 const WHATSAPP_URL =
   "https://wa.me/919575824800?text=Hi%20KabadiBaba!%20I%20want%20to%20schedule%20a%20scrap%20pickup.";
@@ -50,7 +56,6 @@ const scrapCards = [
   },
 ];
 
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-cream">
@@ -63,7 +68,6 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
           {/* ── Left: Text content ── */}
           <div className="max-w-xl">
             {/* Badge */}
@@ -86,7 +90,7 @@ export default function Hero() {
             >
               Turn Your Scrap
               <br />
-              <span className="text-saffron">Into Cash.</span>
+              <span className="text-saffron">Into Cash & Online.</span>
             </motion.h1>
 
             {/* Subtext */}
@@ -97,8 +101,10 @@ export default function Hero() {
               className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed"
             >
               Free doorstep pickup anywhere in{" "}
-              <span className="font-semibold text-india-green">Prayagraj, Uttar Pradesh</span>. We
-              weigh your scrap transparently and pay{" "}
+              <span className="font-semibold text-india-green">
+                Prayagraj, Uttar Pradesh
+              </span>
+              . We weigh your scrap transparently and pay{" "}
               <span className="font-semibold">cash or online instantly</span>.
             </motion.p>
 
@@ -135,11 +141,26 @@ export default function Hero() {
               className="mt-10 flex flex-wrap gap-5"
             >
               {[
-                { icon: ShieldCheck, color: "text-india-green", text: "Verified & Trained Agents" },
-                { icon: Zap, color: "text-saffron", text: "Same-Day Pickup Available" },
-                { icon: Star, color: "text-india-navy", text: "Best Rates Guaranteed" },
+                {
+                  icon: ShieldCheck,
+                  color: "text-india-green",
+                  text: "Verified & Trained Agents",
+                },
+                {
+                  icon: Zap,
+                  color: "text-saffron",
+                  text: "Same-Day Pickup Available",
+                },
+                {
+                  icon: Star,
+                  color: "text-india-navy",
+                  text: "Best Rates Guaranteed",
+                },
               ].map(({ icon: Icon, color, text }) => (
-                <div key={text} className="flex items-center gap-2 text-sm text-gray-600 font-medium">
+                <div
+                  key={text}
+                  className="flex items-center gap-2 text-sm text-gray-600 font-medium"
+                >
                   <Icon size={17} className={color} />
                   {text}
                 </div>
@@ -183,9 +204,17 @@ export default function Hero() {
                     className={`${card.bg} border ${card.border} rounded-2xl p-5 shadow-md hover:shadow-lg transition-shadow w-44`}
                   >
                     <div className="text-3xl mb-3">{card.emoji}</div>
-                    <div className="font-bold text-gray-900 text-sm leading-snug">{card.label}</div>
-                    <div className="text-xs text-gray-400 mt-0.5 mb-3">{card.sub}</div>
-                    <div className={`text-base font-extrabold ${card.rateColor}`}>{card.rate}</div>
+                    <div className="font-bold text-gray-900 text-sm leading-snug">
+                      {card.label}
+                    </div>
+                    <div className="text-xs text-gray-400 mt-0.5 mb-3">
+                      {card.sub}
+                    </div>
+                    <div
+                      className={`text-base font-extrabold ${card.rateColor}`}
+                    >
+                      {card.rate}
+                    </div>
                   </motion.div>
                 </motion.div>
               ))}
@@ -202,7 +231,6 @@ export default function Hero() {
               Free Doorstep Pickup — Prayagraj
             </motion.div>
           </div>
-
         </div>
       </div>
 
@@ -213,7 +241,9 @@ export default function Hero() {
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{ delay: 1, duration: 2, repeat: Infinity }}
       >
-        <span className="text-xs font-medium tracking-wider uppercase">Scroll</span>
+        <span className="text-xs font-medium tracking-wider uppercase">
+          Scroll
+        </span>
         <div className="w-px h-8 bg-gradient-to-b from-gray-300 to-transparent" />
       </motion.div>
     </section>
