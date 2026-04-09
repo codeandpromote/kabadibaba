@@ -18,8 +18,8 @@ const faqs = [
     a: "No minimum quantity at all. Whether you have a single bag of newspapers or a truckload of metal scrap, we'll come to you.",
   },
   {
-    q: "How do you pay me — cash or UPI?",
-    a: "We pay you instantly on the spot in cash. We can also pay via UPI (Google Pay, PhonePe, Paytm) if you prefer a digital payment.",
+    q: "How do you pay me — cash or online?",
+    a: "We pay you instantly on the spot. You can choose cash, or online payment via UPI (Google Pay, PhonePe, Paytm), or bank transfer — whichever is convenient for you.",
   },
   {
     q: "How do I know I'm getting the right weight and fair rates?",

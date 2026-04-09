@@ -19,7 +19,7 @@ export default function BookPickupPage() {
               { icon: ShieldCheck, label: "Verified Agents", color: "text-india-green" },
               { icon: Zap, label: "24-Hour Pickup", color: "text-saffron" },
               { icon: Scale, label: "Certified Weighing", color: "text-india-navy" },
-              { icon: Banknote, label: "Instant Cash", color: "text-india-green" },
+              { icon: Banknote, label: "Cash or Online Payment", color: "text-india-green" },
             ].map(({ icon: Icon, label, color }) => (
               <div key={label} className="flex items-center gap-2 text-sm text-gray-600 font-medium">
                 <Icon size={16} className={color} />

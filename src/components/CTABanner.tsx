@@ -11,7 +11,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   title = "Ready to Turn Your Scrap Into Cash?",
-  subtitle = "Free pickup across Prayagraj, Uttar Pradesh. Instant cash payment. No minimum quantity.",
+  subtitle = "Free pickup across Prayagraj, Uttar Pradesh. Instant cash or online payment. No minimum quantity.",
 }: CTABannerProps) {
   return (
     <section className="relative overflow-hidden bg-gray-950 py-16 sm:py-20">

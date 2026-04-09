@@ -31,7 +31,7 @@ const steps = [
     icon: BadgeIndianRupee,
     title: "Weigh & Get Paid",
     description:
-      "We weigh your scrap using certified digital scales and pay you cash on the spot. No haggling, no waiting.",
+      "We weigh your scrap using certified digital scales and pay you cash or online (UPI/GPay/PhonePe) on the spot. No haggling, no waiting.",
     color: "bg-saffron-50",
     iconColor: "text-saffron-dark",
     borderColor: "border-saffron-100",

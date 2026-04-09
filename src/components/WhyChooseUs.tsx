@@ -31,9 +31,9 @@ const features = [
   },
   {
     icon: Banknote,
-    title: "Instant Cash Payment",
+    title: "Cash or Online Payment",
     description:
-      "Get paid on the spot — cash, UPI, or bank transfer. No waiting for settlement, no cheques.",
+      "Get paid on the spot — choose cash, UPI (GPay, PhonePe, Paytm), or bank transfer. No waiting, no cheques.",
     color: "text-india-green",
     bg: "bg-india-green-50",
   },

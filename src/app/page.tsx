@@ -9,7 +9,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "KabadiBaba – Sell Scrap Online | Free Pickup in Prayagraj",
   description:
-    "Turn your scrap into cash! Free doorstep pickup across Prayagraj, Uttar Pradesh. Best rates guaranteed, instant cash payment. Book your free pickup today.",
+    "Turn your scrap into cash! Free doorstep pickup across Prayagraj, Uttar Pradesh. Best rates guaranteed, instant cash or online payment. Book your free pickup today.",
 };
 
 export default function HomePage() {

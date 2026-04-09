@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | KabadiBaba",
   },
   description:
-    "Turn your scrap into cash! Free doorstep pickup across Prayagraj, Uttar Pradesh. Sell newspaper, plastic, metal, e-waste, old appliances. Best rates, instant cash payment.",
+    "Turn your scrap into cash! Free doorstep pickup across Prayagraj, Uttar Pradesh. Sell newspaper, plastic, metal, e-waste, old appliances. Best rates, instant cash or online payment.",
   keywords:
     "kabadi, scrap dealer, sell scrap online, kabadiwala, scrap pickup Prayagraj, kabadiwala Prayagraj, old newspaper rates, iron scrap rates Prayagraj",
   authors: [{ name: "KabadiBaba" }],

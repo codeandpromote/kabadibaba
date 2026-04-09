@@ -99,7 +99,7 @@ export default function Hero() {
               Free doorstep pickup anywhere in{" "}
               <span className="font-semibold text-india-green">Prayagraj, Uttar Pradesh</span>. We
               weigh your scrap transparently and pay{" "}
-              <span className="font-semibold">cash instantly</span>.
+              <span className="font-semibold">cash or online instantly</span>.
             </motion.p>
 
             {/* CTAs */}

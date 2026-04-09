@@ -28,7 +28,7 @@ export default function RatesPage() {
       <RatesInfo />
       <CTABanner
         title="Like Our Rates? Book a Free Pickup!"
-        subtitle="Our agents arrive within 24 hours and pay you cash on the spot."
+        subtitle="Our agents arrive within 24 hours and pay you cash or online on the spot."
       />
     </>
   );
