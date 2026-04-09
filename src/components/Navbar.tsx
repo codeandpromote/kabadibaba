@@ -53,7 +53,7 @@ export default function Navbar() {
                 Kabadi<span className="text-saffron">Baba</span>
               </span>
               <span className="text-[10px] text-india-green font-medium tracking-wider uppercase -mt-0.5">
-                Sell Scrap. Go Green.
+                Nothing Is Impossible.
               </span>
             </div>
           </Link>

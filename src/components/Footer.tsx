@@ -34,7 +34,7 @@ export default function Footer() {
                 <div className="font-bold text-lg text-white">
                   Kabadi<span className="text-saffron">Baba</span>
                 </div>
-                <div className="text-xs text-gray-500 -mt-0.5">Sell Scrap. Go Green.</div>
+                <div className="text-xs text-gray-500 -mt-0.5">Nothing Is Impossible.</div>
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
