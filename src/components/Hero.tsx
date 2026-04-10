@@ -18,7 +18,6 @@ const scrapCards = [
     emoji: "📰",
     label: "Newspaper",
     sub: "Paper & Books",
-    rate: "₹13/kg",
     bg: "bg-amber-50",
     border: "border-amber-200",
     rateColor: "text-amber-600",
@@ -28,17 +27,15 @@ const scrapCards = [
     emoji: "🔩",
     label: "Iron & Metal",
     sub: "Copper, Brass, Steel",
-    rate: "₹28–430/kg",
     bg: "bg-gray-50",
     border: "border-gray-200",
-    rateColor: "text-gray-600",
+    rateColor: "text-gray-500",
     delay: 0.15,
   },
   {
     emoji: "♻️",
     label: "Plastic",
     sub: "Bottles, Containers",
-    rate: "₹6–12/kg",
     bg: "bg-blue-50",
     border: "border-blue-200",
     rateColor: "text-blue-500",
@@ -48,7 +45,6 @@ const scrapCards = [
     emoji: "📺",
     label: "Old Appliances",
     sub: "AC, Fridge, TV",
-    rate: "₹200–1,500/pc",
     bg: "bg-india-green-50",
     border: "border-green-200",
     rateColor: "text-india-green",
@@ -207,13 +203,11 @@ export default function Hero() {
                     <div className="font-bold text-gray-900 text-sm leading-snug">
                       {card.label}
                     </div>
-                    <div className="text-xs text-gray-400 mt-0.5 mb-3">
+                    <div className="text-xs text-gray-400 mt-0.5 mb-2">
                       {card.sub}
                     </div>
-                    <div
-                      className={`text-base font-extrabold ${card.rateColor}`}
-                    >
-                      {card.rate}
+                    <div className={`text-xs font-semibold ${card.rateColor}`}>
+                      Varies by item
                     </div>
                   </motion.div>
                 </motion.div>

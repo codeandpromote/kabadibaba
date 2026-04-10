@@ -128,8 +128,8 @@ export default function BookingForm() {
                 <Send size={20} className="flex-shrink-0 text-saffron" />
                 <div>
                   <div className="font-bold text-sm text-gray-900">Email Us</div>
-                  <a href="mailto:hello@kabadibaba.co.in" className="text-sm text-saffron hover:underline">
-                    hello@kabadibaba.co.in
+                  <a href="mailto:kabadibaba.prayagraj@gmail.com" className="text-sm text-saffron hover:underline">
+                    kabadibaba.prayagraj@gmail.com
                   </a>
                 </div>
               </div>

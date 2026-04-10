@@ -9,7 +9,7 @@ const materials = [
     icon: Newspaper,
     title: "Paper & Cardboard",
     examples: ["Newspaper", "Books & Magazines", "Cardboard boxes", "Office paper"],
-    rateRange: "₹6 – ₹15 /kg",
+    rateRange: "Varies by item",
     color: "bg-amber-50",
     iconColor: "text-amber-600",
     borderColor: "border-amber-100",
@@ -18,7 +18,7 @@ const materials = [
     icon: Recycle,
     title: "Plastic",
     examples: ["PET bottles", "Hard plastic", "Plastic containers", "PVC pipes"],
-    rateRange: "₹6 – ₹12 /kg",
+    rateRange: "Varies by item",
     color: "bg-blue-50",
     iconColor: "text-blue-500",
     borderColor: "border-blue-100",
@@ -27,7 +27,7 @@ const materials = [
     icon: Wrench,
     title: "Metal & Iron",
     examples: ["Iron & Steel", "Copper wire", "Aluminium", "Brass utensils"],
-    rateRange: "₹28 – ₹450 /kg",
+    rateRange: "Varies by item",
     color: "bg-gray-50",
     iconColor: "text-gray-600",
     borderColor: "border-gray-200",
@@ -45,7 +45,7 @@ const materials = [
     icon: Refrigerator,
     title: "Old Appliances",
     examples: ["AC & Refrigerator", "Washing machine", "Fans & geysers", "Mixers & grinders"],
-    rateRange: "₹300 – ₹1,500 /piece",
+    rateRange: "Varies by item",
     color: "bg-india-green-50",
     iconColor: "text-india-green",
     borderColor: "border-green-100",
@@ -54,7 +54,7 @@ const materials = [
     icon: GlassWater,
     title: "Glass & Others",
     examples: ["Glass bottles", "Rubber tyres", "Steel utensils", "Old furniture"],
-    rateRange: "₹2 – ₹35 /kg",
+    rateRange: "Varies by item",
     color: "bg-saffron-50",
     iconColor: "text-saffron",
     borderColor: "border-saffron-100",
@@ -112,7 +112,7 @@ export default function Materials() {
                 </div>
               </div>
               <div className={`mt-4 pt-3 border-t border-current/10 flex items-center justify-between`}>
-                <span className="text-xs text-gray-400 font-medium">Indicative rate</span>
+                <span className="text-xs text-gray-400 font-medium">Rate</span>
                 <span className={`text-sm font-bold ${item.iconColor}`}>{item.rateRange}</span>
               </div>
             </motion.div>

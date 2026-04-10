@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"KabadiBaba Website" <${process.env.SMTP_USER}>`,
-      to: process.env.RECIPIENT_EMAIL || "hello@kabadibaba.co.in",
+      to: process.env.RECIPIENT_EMAIL || "kabadibaba.prayagraj@gmail.com",
       subject: `🗑️ New Pickup Request – ${name} (${city}) | KabadiBaba`,
       html: emailHtml,
       replyTo: phone,

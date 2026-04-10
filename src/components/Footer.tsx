@@ -1,16 +1,10 @@
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 const quickLinks = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Scrap Rates", href: "#rates" },
-  { label: "Cities We Cover", href: "#cities" },
-  { label: "Why KabadiBaba", href: "#about" },
-  { label: "Book Free Pickup", href: "#contact" },
-];
-
-const prayagrajLocalities = [
-  "Civil Lines", "George Town", "Allahpur", "Naini",
-  "Phaphamau", "Jhunsi", "Bamrauli", "Kareli",
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Scrap Rates", href: "/rates" },
+  { label: "About Us", href: "/about" },
+  { label: "Book Free Pickup", href: "/book-pickup" },
 ];
 
 export default function Footer() {
@@ -59,11 +53,11 @@ export default function Footer() {
                 +91 95758 24800
               </a>
               <a
-                href="mailto:hello@kabadibaba.co.in"
+                href="mailto:kabadibaba.prayagraj@gmail.com"
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
               >
                 <Mail size={16} />
-                hello@kabadibaba.co.in
+                kabadibaba.prayagraj@gmail.com
               </a>
             </div>
           </div>
@@ -84,25 +78,6 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          {/* Areas */}
-          <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-5">
-              Service Areas
-            </h4>
-            <div className="flex items-center gap-1.5 text-india-green text-xs font-semibold mb-3">
-              <MapPin size={12} />
-              Prayagraj, U.P.
-            </div>
-            <ul className="space-y-1.5">
-              {prayagrajLocalities.map((c) => (
-                <li key={c} className="text-xs text-gray-400">
-                  {c}
-                </li>
-              ))}
-              <li className="text-xs text-gray-600 italic mt-1">+ more areas</li>
             </ul>
           </div>
 

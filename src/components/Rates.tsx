@@ -10,11 +10,11 @@ const rateCategories = [
     color: "border-amber-200 bg-amber-50",
     headingColor: "text-amber-700",
     items: [
-      { name: "Newspaper", rate: "₹13/kg" },
-      { name: "Books & Copies", rate: "₹11/kg" },
-      { name: "Cardboard / Corrugated", rate: "₹7/kg" },
-      { name: "Mixed Paper", rate: "₹6/kg" },
-      { name: "Magazines", rate: "₹10/kg" },
+      { name: "Newspaper" },
+      { name: "Books & Copies" },
+      { name: "Cardboard / Corrugated" },
+      { name: "Mixed Paper" },
+      { name: "Magazines" },
     ],
   },
   {
@@ -22,11 +22,11 @@ const rateCategories = [
     color: "border-blue-200 bg-blue-50",
     headingColor: "text-blue-600",
     items: [
-      { name: "PET Bottles (clear)", rate: "₹12/kg" },
-      { name: "Hard Plastic (rigid)", rate: "₹10/kg" },
-      { name: "Soft / Mixed Plastic", rate: "₹6/kg" },
-      { name: "PVC Pipes / Fittings", rate: "₹8/kg" },
-      { name: "Plastic Containers", rate: "₹7/kg" },
+      { name: "PET Bottles (clear)" },
+      { name: "Hard Plastic (rigid)" },
+      { name: "Soft / Mixed Plastic" },
+      { name: "PVC Pipes / Fittings" },
+      { name: "Plastic Containers" },
     ],
   },
   {
@@ -34,11 +34,11 @@ const rateCategories = [
     color: "border-gray-300 bg-gray-50",
     headingColor: "text-gray-700",
     items: [
-      { name: "Iron / Steel (heavy)", rate: "₹28/kg" },
-      { name: "Aluminium", rate: "₹85/kg" },
-      { name: "Copper", rate: "₹430/kg" },
-      { name: "Brass", rate: "₹270/kg" },
-      { name: "Steel Utensils", rate: "₹32/kg" },
+      { name: "Iron / Steel (heavy)" },
+      { name: "Aluminium" },
+      { name: "Copper" },
+      { name: "Brass" },
+      { name: "Steel Utensils" },
     ],
   },
   {
@@ -46,11 +46,11 @@ const rateCategories = [
     color: "border-india-green/30 bg-india-green-50",
     headingColor: "text-india-green",
     items: [
-      { name: "Old Air Conditioner", rate: "₹1,200/pc" },
-      { name: "Old Refrigerator", rate: "₹700/pc" },
-      { name: "Old Washing Machine", rate: "₹500/pc" },
-      { name: "Old TV / Monitor", rate: "₹200/pc" },
-      { name: "Laptop / Desktop CPU", rate: "₹350/pc" },
+      { name: "Old Air Conditioner" },
+      { name: "Old Refrigerator" },
+      { name: "Old Washing Machine" },
+      { name: "Old TV / Monitor" },
+      { name: "Laptop / Desktop CPU" },
     ],
   },
 ];
@@ -95,8 +95,8 @@ export default function Rates() {
                 {cat.items.map((item) => (
                   <div key={item.name} className="flex justify-between items-center px-6 py-3">
                     <span className="text-sm text-gray-700">{item.name}</span>
-                    <span className="text-sm font-bold text-gray-900 bg-white px-3 py-1 rounded-full shadow-sm">
-                      {item.rate}
+                    <span className="text-xs font-semibold text-gray-500 bg-white px-3 py-1 rounded-full shadow-sm">
+                      Varies by item
                     </span>
                   </div>
                 ))}
