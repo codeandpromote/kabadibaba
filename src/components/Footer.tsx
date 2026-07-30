@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 const quickLinks = [
@@ -15,15 +16,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 flex-shrink-0">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                  <circle cx="20" cy="20" r="20" fill="#1f2937" />
-                  <path d="M20 8 L14 16 L17 16 C17 22 13 25 9 25 C12 30 18 32 23 29 L21 26 L26 26 L26 32 C30 29 32 24 30 19 L27 21 L24 15 C22 11 21 9 20 8Z" fill="#ff9933" />
-                  <path d="M28 12 C33 16 34 22 31 27 L28 25 L25 31 L31 31 C33 27 33 20 29 15Z" fill="#138808" opacity="0.9" />
-                  <circle cx="20" cy="20" r="3" fill="#1a237e" />
-                </svg>
-              </div>
+            <div className="flex items-center gap-2.5 mb-4">
+              {/* alt="" — the brand name is already in the adjacent text */}
+              <Image
+                src="/logo-mark.png"
+                alt=""
+                width={44}
+                height={44}
+                className="w-11 h-11 flex-shrink-0 object-contain"
+              />
               <div>
                 <div className="font-bold text-lg text-white">
                   Kabadi<span className="text-saffron">Baba</span>

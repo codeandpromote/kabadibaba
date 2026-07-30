@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from "lucide-react";
@@ -38,15 +39,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative w-9 h-9 flex-shrink-0">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                <circle cx="20" cy="20" r="20" fill="#fff8ee" />
-                <path d="M20 8 L14 16 L17 16 C17 22 13 25 9 25 C12 30 18 32 23 29 L21 26 L26 26 L26 32 C30 29 32 24 30 19 L27 21 L24 15 C22 11 21 9 20 8Z" fill="#ff9933" />
-                <path d="M28 12 C33 16 34 22 31 27 L28 25 L25 31 L31 31 C33 27 33 20 29 15Z" fill="#138808" opacity="0.8" />
-                <circle cx="20" cy="20" r="3" fill="#1a237e" />
-              </svg>
-            </div>
+          <Link href="/" className="flex items-center gap-2.5 group">
+            {/* alt="" — the brand name is already in the adjacent text */}
+            <Image
+              src="/logo-mark.png"
+              alt=""
+              width={40}
+              height={40}
+              loading="eager"
+              className="w-10 h-10 flex-shrink-0 object-contain"
+            />
             <div className="flex flex-col leading-tight">
               <span className={`font-bold text-lg tracking-tight transition-colors ${solidBg ? "text-gray-900" : "text-gray-900"}`}>
                 Kabadi<span className="text-saffron">Baba</span>
